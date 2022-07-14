@@ -35,12 +35,28 @@ header * {
     background-size: 4.6em;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
+    animation-name: logo;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-timing-function: ease;
+}
+
+@keyframes logo {
+    0% {transform: translate(100em);}
+    50% {top: 0; left: 4.5em; transform: rotate(360deg);}
+    100% {top: 0; left: 0;}
 }
 
 .log:hover {
-    background-image: url(../img/logo.png);
+    background-image: url(../img/logo3.png);
     background-size: 4.9em;
     background-repeat: no-repeat;
+}
+
+.log a{
+    padding: 0em 2em 3em 2em;
+    margin: 0em -0.7em;
 }
 
 nav {
@@ -89,6 +105,17 @@ span {
 h1 {
     color: #f8985fcc;
     font-family: 'Sorts Mill Goudy', serif;
+    position: relative;
+    animation-name: titulo;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-timing-function: ease;
+}
+
+@keyframes titulo {
+    0%{top: -3.4em; font-size: 3.1em;}
+    50%{top: -3.1em; font-size: 3em;}
+    100%{top: 0;}
 }
 
 main {
@@ -206,9 +233,20 @@ footer a {
         padding: 1em;
     }
 
+    @keyframes logo {
+        0% {transform: translate(100em);}
+        50% {top: 0; left: 3.5em; transform: rotate(360deg);}
+        100% {top: 0; left: 0;}
+    }
+    
     .principal {
         font-size: small;
         padding: 1.4em 0 3.2em 0;
+    }
+    
+    @keyframes titulo {
+        0%{top: -5em; font-size: 2.4em;}
+        100%{top: 0;}
     }
 
     main {
@@ -231,10 +269,22 @@ footer a {
 
     .log {
         padding: 1.8em;
+        margin: 0.6em auto;
+        animation-timing-function: ease-out;
+    }
+
+    @keyframes logo {
+        0% {top: 0; transform: translate(100em);}
+        50% {left: -10em; transform: rotate(360deg);}
+        100% {top: 0; left: 0;}
     }
 
     .log:hover {
         background-size: 5em;
+    }
+
+    .log a{
+        padding: 1.4em 2em 1.5em 2em;
     }
 
     nav {
@@ -257,6 +307,13 @@ footer a {
 
     h1 {
         padding: 0;
+        animation-timing-function: ease-in;
+    }
+
+    @keyframes titulo {
+        0%{top: -13em; font-size: 2.5em;}
+        50%{top: -5em; font-size: 2.5em;}
+        100%{top: 0;}
     }
 
     section {
