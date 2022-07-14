@@ -1,40 +1,99 @@
 * {
+    margin: 10px;
+    padding: auto;
+}
+
+html,
+body {
     max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header {
+    background-image: url(../img/header.jpg);
+    background-size: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 25.4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 0.6em;
+}
+
+header * {
     margin: 10px;
     padding: 10px;
 }
 
-header {
-    background: #000;
-}
-
 .menu {
-    background: #06283D;
     display: flex;
-    justify-content: center;
+    margin-top: 2em;
 }
 
 .log {
-    background: #FF5D5D;
-    flex: 1 1 auto;
+    flex: 0.5 1 auto;
+    background-image: url(../img/logo.png);
+    background-size: 4.6em;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.log:hover {
+    background-image: url(../img/logo.png);
+    background-size: 4.9em;
+    background-repeat: no-repeat;
 }
 
 nav {
-    background: #FF5D5D;
     flex: 4 1 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    color: #999;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000;
+}
+
+i {
+    margin: auto;
+    padding: 0.3em;
+}
+
+span {
+    margin: 0;
+    padding: 0;
 }
 
 .social {
-    background: #FF5D5D;
-    flex: 1 1 auto;
+    flex: 0.5 1 auto;
+    align-self: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social a {
+    padding: 0.2em;
+    margin: 0;
 }
 
 .principal {
-    background: #F15412;
+    background: #0001;
+    margin: 0.1em 4.5em;
+    padding: 0.8em 0 2.4em 0;
 }
 
 h1 {
-    background: #F4E06D;
+    color: #f8985fcc;
+    font-family: 'Sorts Mill Goudy', serif;
 }
 
 main {
@@ -77,6 +136,15 @@ footer {
 }
 
 @media (max-width: 1024px) {
+    .log {
+        padding: 1em;
+    }
+
+    .principal {
+        font-size: small;
+        padding: 1.4em 0 3.2em 0;
+    }
+
     main {
         background: #FAEA48;
         flex-direction: column;
@@ -84,11 +152,45 @@ footer {
 }
 
 @media (max-width: 769px) {
+    header {
+        height: 37em;
+    }
+
     .menu {
         flex-direction: column;
     }
 
-    section{
+    .log {
+        padding: 1.8em;
+    }
+
+    .log:hover {
+        background-size: 5em;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    .social {
+        margin: 0;
+    }
+
+    span {
+        display: none;
+    }
+
+    .principal {
+        font-size: x-small;
+        margin: 0;
+        padding-bottom: 14em;
+    }
+
+    h1 {
+        padding: 0;
+    }
+
+    section {
         flex-direction: column;
     }
 
