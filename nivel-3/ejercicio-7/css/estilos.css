@@ -1,0 +1,69 @@
+* {
+    max-width: 1200px;
+    margin: 10px;
+    padding: 10px;
+}
+
+header {
+    background: #000;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-bottom: 1.25em;
+}
+
+.menu {
+    background: #146;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    margin-bottom: 0;
+}
+
+.logo, nav, .social {
+    background: #e45;
+}
+
+.principal {
+    background-color: #e64;
+}
+
+h1 {
+    background: #fd6;
+}
+
+main {
+    background: #000;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    margin-bottom: 1.25em;
+}
+
+section {
+    background: #146;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+article {
+    background-color: #36d;
+}
+
+.large {
+    background: #9bf;
+    grid-column: 1 / -1;
+}
+
+aside {
+    background: #e45;
+}
+
+.publicidad {
+    background: #fd7;
+}
+
+footer {
+    background: #000;
+}
+
+.pie {
+    background: #eb0;
+}
