@@ -67,3 +67,10 @@ footer {
 .pie {
     background: #eb0;
 }
+
+@media (max-width: 1024px){
+    main {
+        background: #ff2;
+        grid-template-columns: 1fr;
+    }
+}
