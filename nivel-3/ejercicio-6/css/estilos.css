@@ -238,6 +238,10 @@ footer a {
         50% {top: 0; left: 3.5em; transform: rotate(360deg);}
         100% {top: 0; left: 0;}
     }
+
+    .log a {
+        padding: 0.3em 2em 2.8em 2em;
+    }
     
     .principal {
         font-size: small;
@@ -284,7 +288,7 @@ footer a {
     }
 
     .log a{
-        padding: 1.4em 2em 1.5em 2em;
+        padding: 1.4em 2.2em 1.5em 2em;
     }
 
     nav {
