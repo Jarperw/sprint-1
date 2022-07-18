@@ -182,9 +182,9 @@ article a {
 .large {
     background: none;
     color: #000;
+    text-align: center;
     padding: 0;
     grid-column: 1 / -1;
-    text-align: center;
 }
 
 .large p {
