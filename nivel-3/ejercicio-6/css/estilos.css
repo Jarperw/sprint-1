@@ -54,6 +54,13 @@ header * {
     background-repeat: no-repeat;
 }
 
+.log:active {
+    background: url(../img/logo.png);
+    background-size: 4.6em;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .log a{
     padding: 0em 2em 3em 2em;
     margin: 0em -0.7em;
@@ -72,6 +79,10 @@ a {
 
 a:hover {
     color: #000;
+}
+
+a:active {
+    color: #e45;
 }
 
 i {
@@ -285,6 +296,10 @@ footer a {
 
     .log:hover {
         background-size: 5em;
+    }
+
+    .log:active {
+        background-size: 4.6em;
     }
 
     .log a{
